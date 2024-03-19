@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="cetak">
+        <table style="width: 50%; background-color: lightblue; border: 1px solid; text-align: center; margin: auto;">
+
+            <thead>
+            <tr>
+                <th colspan="2">Form Cetak Data Pegawai</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="">Nama Pegawai : </label>
+                    </td>
+                    <td>
+                        <input type="text" name="nama" id="" placeholder="Masukkan Nama Pegawai">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Jabatan : </label>
+                    </td>
+                    <td>
+                        <select name="jabatan" id=""></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Status : </label>
+                    </td>
+                    <td>
+                        <select name="status" id=""></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="button" name="proses" id="" value="Cetak Data" onclick="dataPerson()">
+                </td>
+                </tr>
+            </tbody>
+         
+        </table>
+    </form>
+    <br>
+    <center id="hasil"></center>
+    <script src="js/script.js"></script>
+</body>
+</html>
