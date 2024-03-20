@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+<h2>Letakkan kursor ke masing2 kotak untuk melihat gambar</h2>
+<div id="div1">
+    Hewan Bebek
+    <audio id="audio1">
+        <source src="audio/bebek.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<div id="div2">
+    Hewan Kucing
+    <audio id="audio2">
+        <source src="audio/kucing.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+<div id="div3">
+    Hewan Ayam
+    <audio id="audio3">
+        <source src="audio/ayam.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+
+
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+    // tugas hari ini
+    // ketika mousenya diatas gambar kotak maka hewannya bisa bersuara
+$("document").ready(function(){
+
+    $("#div1").mouseover(function(){
+        $(this).css({
+            background: "url('https://3.bp.blogspot.com/-QP_spB5nPPw/WZKLv2TIg5I/AAAAAAAAAQk/8A-63_RFBpMk5E6ZejhSMHP3tnwpjLLOwCLcBGAs/s1600/gambar%2Bbebek%2Bberenang%2B6.jpg')"
+        });
+        document.getElementById('audio1').play();
+    });
+
+    $("div").mouseout(function(){
+        $(this).css({
+            background: "rgb(141, 97, 126)"
+        });
+    });
+
+    $("#div2").mouseover(function(){
+        $(this).css({
+            background: "url('http://startfmmadina.com/wp-content/uploads/2017/11/100-Gambar-dp-bbm-kucing-lucu-dan-gemesin-10.jpg')"
+        });
+        document.getElementById('audio2').play();
+    });
+
+    $("#div3").mouseover(function(){
+        $(this).css({
+            background: "url('https://2.bp.blogspot.com/-ojD_-fGxmHU/UUK35O_hpdI/AAAAAAAAAC4/bZqmiJS2O7A/s1600/ayam-jago1.jpg')"
+        });
+        document.getElementById('audio3').play();
+    });
+
+});
+
+</script>
+
+</body>
+</html>
